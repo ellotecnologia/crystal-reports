@@ -3,6 +3,7 @@ package Crystal12;
 {$R *.res}
 {$R 'c:\program files\borland\delphi6\Imports\CrystalPrintControlLib_TLB.dcr'}
 {$R 'c:\program files\borland\delphi6\Imports\PAGEOBJECTMODELLib_TLB.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
 {$BOOLEVAL OFF}
@@ -13,17 +14,19 @@ package Crystal12;
 {$LOCALSYMBOLS ON}
 {$LONGSTRINGS ON}
 {$OPENSTRINGS ON}
-{$OPTIMIZATION ON}
+{$OPTIMIZATION OFF}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
 {$REFERENCEINFO ON}
 {$SAFEDIVIDE OFF}
-{$STACKFRAMES OFF}
+{$STACKFRAMES ON}
 {$TYPEDADDRESS OFF}
 {$VARSTRINGCHECKS ON}
 {$WRITEABLECONST OFF}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'Crystal'}
 {$IMPLICITBUILD OFF}
 
@@ -32,7 +35,7 @@ requires
   vcl;
 
 contains
-  CrystalPrintControlLib_TLB in 'C:\Program Files\Borland\Delphi6\Imports\CrystalPrintControlLib_TLB.pas',
-  PAGEOBJECTMODELLib_TLB in 'C:\Program Files\Borland\Delphi6\Imports\PAGEOBJECTMODELLib_TLB.pas';
+  CrystalPrintControlLib_TLB in 'CrystalPrintControlLib_TLB.pas',
+  PAGEOBJECTMODELLib_TLB in 'PAGEOBJECTMODELLib_TLB.pas';
 
 end.
