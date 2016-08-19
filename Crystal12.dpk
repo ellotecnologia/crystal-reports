@@ -1,8 +1,8 @@
 package Crystal12;
 
 {$R *.res}
-{$R 'c:\program files\borland\delphi6\Imports\CrystalPrintControlLib_TLB.dcr'}
-{$R 'c:\program files\borland\delphi6\Imports\PAGEOBJECTMODELLib_TLB.dcr'}
+{$R 'CRVIEWER9Lib_TLB.dcr'}
+{$R 'CRAXDRT_TLB.dcr'}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -35,7 +35,7 @@ requires
   vcl;
 
 contains
-  CrystalPrintControlLib_TLB in 'CrystalPrintControlLib_TLB.pas',
-  PAGEOBJECTMODELLib_TLB in 'PAGEOBJECTMODELLib_TLB.pas';
+  CRVIEWER9Lib_TLB in 'CRVIEWER9Lib_TLB.pas',
+  CRAXDRT_TLB in 'CRAXDRT_TLB.pas';
 
 end.
