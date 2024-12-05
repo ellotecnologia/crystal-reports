@@ -33,6 +33,7 @@ requires
 
 contains
   CRVIEWER9Lib_TLB in 'CRVIEWER9Lib_TLB.pas',
+  CRAXDDRT_TLB in 'CRAXDDRT_TLB.pas',
   CRAXDRT_TLB in 'CRAXDRT_TLB.pas';
 
 end.
